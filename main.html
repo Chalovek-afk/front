@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wine Store</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-contact">
+        <span>Новокузнечный переулок 4/1</span>
+        <a href="tel:">8 (812) 123-45-67</a>
+      </div>
+
+      <nav>
+        <span>Каталог</span>
+        <div class="nav-separator"></div>
+        <span>Доставка</span>
+        <div class="nav-separator"></div>
+        <span>Коллекции</span>
+        <div class="nav-separator"></div>
+        <span>Контакты</span>
+      </nav>
+
+      <div class="action-buttons">
+        <button>ВИННАЯ КАРТА</button>
+        <button>ДЕГУСТАЦИЯ</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="wine">
+        <div class="wine-content">
+          <h1 class="wine-title">Лучший вкус, это вкус долголетнего вина</h1>
+          <hr class="short-hr" id="wine-hr" />
+          <p class="wine-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+            enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi
+            sit non sit sed fermentum. Felis adipiscing morbi sodales ac. Mauris
+            dictumst risus pulvinar blandit elit. Vestibulum quam ultrices
+            nascetur et viverra suscipit. Proin vitae aliquet leo aliquam amet
+            rutrum. Lectus auctor purus ultrices enim ultrices. Augue fringilla
+            tellus tortor orci ultrices sed. Viverra cras sapien, pellentesque
+            viverra malesuada. Tellus dolor, eget vitae dignissim molestie eget
+            sit duis. Vitae dui vel pretium euismod diam. Pellentesque amet,
+            lacus, amet, quis risus. Pellentesque scelerisque nunc, orci aliquam
+            quis.
+          </p>
+          <img src="/static/1.png" id="wine-img" />
+        </div>
+      </section>
+
+      <section class="collections">
+        <hr class="long-hr" id="long-hr-1" />
+
+        <div class="collections-content">
+          <div id="collection-text">
+            <h2 class="section-title">Новинки коллекций</h2>
+            <h3 id="march-harvest">Март 1980<br />Урожай Марселя</h3>
+            <hr class="short-hr" id="collection-hr" />
+            <p class="collection-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi
+              sit non sit sed fermentum. Felis adipiscing morbi sodales ac.
+            </p>
+
+            <div class="collection-grid">
+              <div>1980</div>
+              <div>
+                <h4>Colli Euganei Bianco Ca' Lustra 1980</h4>
+                <span>Красочная бутылка вина из Марселя</span>
+              </div>
+              <div>1980</div>
+              <div>
+                <h4>Colli Euganei Bianco Ca' Lustra 1980</h4>
+                <span>Красочная бутылка вина из Марселя</span>
+              </div>
+              <div>1980</div>
+              <div>
+                <h4>Colli Euganei Bianco Ca' Lustra 1980</h4>
+                <span>Красочная бутылка вина из Марселя</span>
+              </div>
+            </div>
+            <p class="collection-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi
+              sit non sit sed fermentum. Felis adipiscing morbi sodales ac.
+            </p>
+            <button id="collection-button">УЗНАТЬ ПОДРОБНЕЕ</button>
+          </div>
+
+          <div class="collection-img">
+            <img src="static/2.png" />
+            <div class="collection-sub-image">
+              <img src="static/3.png" />
+              <img src="static/4.png" />
+            </div>
+          </div>
+        </div>
+        <hr class="long-hr" id="long-hr-2" />
+      </section>
+
+      <section class="tasting">
+        <div class="tasting-title">
+          <h1>Запись на дегустацию</h1>
+        </div>
+        <div class="tasting-content">
+          <div class="tasting-top">
+            <img src="static/5.png" id="grape" class="tasting-img" />
+            <img src="static/6.png" id="barrel" class="tasting-img" />
+          </div>
+          <div class="tasting-bottom">
+            <hr class="shortest-hr" />
+            <p class="tasting-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi
+              sit non sit sed fermentum.
+            </p>
+            <form class="registration-form">
+              <input
+                type="text"
+                name="fieldA"
+                placeholder="Имя"
+                class="input-a"
+              />
+              <input
+                type="text"
+                name="fieldB"
+                placeholder="Телефон"
+                class="input-b"
+              />
+              <input
+                type="text"
+                name="fieldC"
+                placeholder="Бутик на Невском 103"
+                class="input-c"
+              />
+              <button type="submit" class="submit-btn">ЗАПИСАТЬСЯ</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-nav">
+        <span class="placeholder"></span>
+        <span>Главная</span>
+        <span>Каталог</span>
+        <span>Поставщики</span>
+        <span>Коллекции</span>
+        <span>Дегустация</span>
+        <span>Коллекция 2020</span>
+        <span>Контакты</span>
+        <span class="placeholder"></span>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-brand">ВИННЫЙ БУТИК LE CORTE</span>
+        <div class="nav-separator"></div>
+        <span class="footer-phone">8 (812) 123-45-67</span>
+        <div class="nav-separator"></div>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-vk"></i>
+        <i class="fab fa-facebook"></i>
+        <div class="nav-separator"></div>
+        <span class="footer-copyright">© le-corte.ru</span>
+      </div>
+    </footer>
+  </body>
+</html>
