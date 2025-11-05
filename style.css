@@ -356,6 +356,17 @@ footer {
   justify-content: center;
 }
 
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-in.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
 @media (max-width: 1200px) {
   #grape,
   #barrel {
@@ -415,7 +426,6 @@ footer {
   }
 
   nav {
-    display: none;
     position: absolute;
     top: 80px;
     left: 0;
@@ -425,10 +435,16 @@ footer {
     padding: 20px 0;
     gap: 15px;
     z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   }
 
   nav.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .nav-separator {
