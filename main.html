@@ -21,14 +21,20 @@
         <a href="tel:">8 (812) 123-45-67</a>
       </div>
 
+      <button class="burger-menu" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav>
-        <span>Каталог</span>
+        <a href="#wine">Каталог</a>
         <div class="nav-separator"></div>
-        <span>Доставка</span>
+        <a href="#collections">Доставка</a>
         <div class="nav-separator"></div>
-        <span>Коллекции</span>
+        <a href="#collections">Коллекции</a>
         <div class="nav-separator"></div>
-        <span>Контакты</span>
+        <a href="#tasting">Контакты</a>
       </nav>
 
       <div class="action-buttons">
@@ -38,7 +44,7 @@
     </header>
 
     <main>
-      <section class="wine">
+      <section class="wine" id="wine">
         <div class="wine-content">
           <h1 class="wine-title">Лучший вкус, это вкус долголетнего вина</h1>
           <hr class="short-hr" id="wine-hr" />
@@ -59,7 +65,7 @@
         </div>
       </section>
 
-      <section class="collections">
+      <section class="collections" id="collections">
         <hr class="long-hr" id="long-hr-1" />
 
         <div class="collections-content">
@@ -109,7 +115,7 @@
         <hr class="long-hr" id="long-hr-2" />
       </section>
 
-      <section class="tasting">
+      <section class="tasting" id="tasting">
         <div class="tasting-title">
           <h1>Запись на дегустацию</h1>
         </div>
@@ -175,5 +181,6 @@
         <span class="footer-copyright">© le-corte.ru</span>
       </div>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
