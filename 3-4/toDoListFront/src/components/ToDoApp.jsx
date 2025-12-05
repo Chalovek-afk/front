@@ -1,19 +1,17 @@
-import { useState, useCallback } from 'react';
-import { useTasks } from '../hooks/useTasks';
-import { useFilter } from '../hooks/useFilter';
-import { usePagination } from '../hooks/usePagination';
-import { useStatus } from '../hooks/useStatus';
-import { addSymbolShielding } from '../utils/shielding';
+import { useState, useCallback } from "react";
+import { useTasks } from "../hooks/useTasks";
+import { useFilter } from "../hooks/useFilter";
+import { usePagination } from "../hooks/usePagination";
+import { useStatus } from "../hooks/useStatus";
 
-
-import TaskInput from './TaskInput';
-import CheckAll from './CheckAll';
-import TaskItem from './TaskItem';
-import FilterTabs from './FilterTabs';
-import Pagination from './Pagination';
-import DeleteCompleted from './DeleteCompleted';
-import StatusMessage from './StatusMessage';
-import SearchInput from './SearchInput';
+import TaskInput from "./TaskInput";
+import CheckAll from "./CheckAll";
+import TaskItem from "./TaskItem";
+import FilterTabs from "./FilterTabs";
+import Pagination from "./Pagination";
+import DeleteCompleted from "./DeleteCompleted";
+import StatusMessage from "./StatusMessage";
+import SearchInput from "./SearchInput";
 
 export default function ToDoApp() {
   const tasksCtx = useTasks();
@@ -21,12 +19,12 @@ export default function ToDoApp() {
   const paginationCtx = usePagination(filterCtx.filteredTasks);
   const statusCtx = useStatus();
 
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const [editingId, setEditingId] = useState(null);
-  const [editText, setEditText] = useState('');
+  const [editText, setEditText] = useState("");
 
-  const handleAdd = () => {
-    const result = tasksCtx.addTask(inputValue);
+  const handleAdd = async () => {
+    const result = await tasksCtx.addTask(inputValue);
     if (result.success) {
       setInputValue('');
       statusCtx.show('Task created!');
@@ -37,12 +35,12 @@ export default function ToDoApp() {
 
   const handleToggle = (id) => {
     tasksCtx.toggleTask(id);
-    statusCtx.show('Task updated!');
+    statusCtx.show("Task updated!");
   };
 
   const handleDelete = (id) => {
     tasksCtx.deleteTask(id);
-    statusCtx.show('Task deleted!');
+    statusCtx.show("Task deleted!");
   };
 
   const handleStartEdit = useCallback((task) => {
@@ -50,14 +48,10 @@ export default function ToDoApp() {
     setEditText(task.text);
   }, []);
 
-  const handleSaveEdit =(id, text) => {
+  const handleSaveEdit = (id, text) => {
     if (text.trim()) {
-      const shielded = addSymbolShielding(text.trim());
-      const updatedTasks = tasksCtx.tasks.map(t =>
-        t.id === id ? { ...t, text: shielded } : t
-      );
-      tasksCtx.setTasks(updatedTasks);
-      statusCtx.show('Task updated!');
+      tasksCtx.updateTaskText(id, text);
+      statusCtx.show("Task updated!");
     }
     setEditingId(null);
   };
@@ -71,13 +65,9 @@ export default function ToDoApp() {
     paginationCtx.resetPage();
   };
 
-  const handleDeleteCompleted =() => {
-    const count = tasksCtx.deleteCompleted();
-    statusCtx.show(
-      count > 0
-        ? `${count} completed task(s) deleted!`
-        : 'No completed tasks to delete'
-    );
+  const handleDeleteCompleted = async () => {
+    const message = await tasksCtx.deleteCompleted();
+    statusCtx.show(message);
   };
 
   const completedCount = tasksCtx.tasks.length - filterCtx.activeCount;
@@ -89,14 +79,15 @@ export default function ToDoApp() {
         onChange={filterCtx.setSearchQuery}
       />
       <div className="inputs">
-        
         <TaskInput
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onAdd={handleAdd}
         />
         <CheckAll
-          checked={tasksCtx.tasks.length > 0 && tasksCtx.tasks.every(t => t.checked)}
+          checked={
+            tasksCtx.tasks.length > 0 && tasksCtx.tasks.every((t) => t.checked)
+          }
           disabled={tasksCtx.tasks.length === 0}
           onToggle={tasksCtx.toggleAll}
         />
@@ -109,7 +100,7 @@ export default function ToDoApp() {
       />
 
       <ul id="to-do-list">
-        {paginationCtx.paginatedItems.map(task => (
+        {paginationCtx.paginatedItems.map((task) => (
           <TaskItem
             key={task.id}
             task={task}
