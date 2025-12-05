@@ -194,9 +194,11 @@ main > button {
 }
 
 .search-input {
-  margin-top: 10px;
-  margin-left: 44%;
-  width: 50%;
+  margin-left: 0 !important;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 6px 0;
 }
 
 #task-search {

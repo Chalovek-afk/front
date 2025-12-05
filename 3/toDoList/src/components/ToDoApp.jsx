@@ -84,7 +84,12 @@ export default function ToDoApp() {
 
   return (
     <>
+      <SearchInput
+        value={filterCtx.searchQuery}
+        onChange={filterCtx.setSearchQuery}
+      />
       <div className="inputs">
+        
         <TaskInput
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
@@ -94,10 +99,6 @@ export default function ToDoApp() {
           checked={tasksCtx.tasks.length > 0 && tasksCtx.tasks.every(t => t.checked)}
           disabled={tasksCtx.tasks.length === 0}
           onToggle={tasksCtx.toggleAll}
-        />
-        <SearchInput
-        value={filterCtx.searchQuery}
-        onChange={filterCtx.setSearchQuery}
         />
       </div>
 
