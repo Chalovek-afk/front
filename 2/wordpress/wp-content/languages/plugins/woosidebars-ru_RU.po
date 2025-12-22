@@ -1,0 +1,356 @@
+# Translation of Plugins - WooSidebars - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - WooSidebars - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-05-29 07:43:45+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - WooSidebars - Stable (latest release)\n"
+
+#. Author URI of the plugin
+msgid "http://woocommerce.com/"
+msgstr "http://woocommerce.com/"
+
+#: classes/class-woo-conditions.php:147
+msgid "The \"%s\" page and its children"
+msgstr "Страница \"%s\" и ее дочерние элементы"
+
+#: classes/class-woo-conditions.php:129
+msgid "Pages and their children"
+msgstr "Страницы и их дочерние элементы"
+
+#. Description of the plugin
+msgid "Replace widget areas in your theme for specific pages, archives and other sections of WordPress."
+msgstr "Заменить виджет областей в вашей теме для конкретных страниц, архивов и других разделов WordPress."
+
+#. Plugin URI of the plugin
+msgid "http://woocommerce.com/woosidebars/"
+msgstr "http://woocommerce.com/woosidebars/"
+
+#. Plugin Name of the plugin
+msgid "WooSidebars"
+msgstr "WooSidebars"
+
+#: integrations/integration-woocommerce.php:125
+msgid "Products tagged \"%s\""
+msgstr "Товары с тегами \"%s\""
+
+#: integrations/integration-woocommerce.php:124
+msgid "Products in the \"%s\" category"
+msgstr "Товары в категории \"%s\""
+
+#: integrations/integration-woocommerce.php:119
+msgid "The WooCommerce \"Account\" pages"
+msgstr "Страница WooCommerce \"Учётная запись\""
+
+#: integrations/integration-woocommerce.php:118
+msgid "Account Pages"
+msgstr "Страницы учётной записи"
+
+#: integrations/integration-woocommerce.php:114
+msgid "The WooCommerce \"Checkout\" page"
+msgstr "Страница WooCommerce \"Оформление заказа\""
+
+#: integrations/integration-woocommerce.php:113
+msgid "Checkout Page"
+msgstr "Страница оформления заказа"
+
+#: integrations/integration-woocommerce.php:109
+msgid "The WooCommerce \"Cart\" page"
+msgstr "Страница WooCommerce \"Корзина\""
+
+#: integrations/integration-woocommerce.php:108
+msgid "Cart Page"
+msgstr "Страница корзины"
+
+#: integrations/integration-woocommerce.php:104
+msgid "All products"
+msgstr "Все товары"
+
+#: integrations/integration-woocommerce.php:103
+msgid "Products"
+msgstr "Товары"
+
+#: integrations/integration-woocommerce.php:99
+msgid "All product tags"
+msgstr "Показать метки товара"
+
+#: integrations/integration-woocommerce.php:98
+msgid "Product Tags"
+msgstr "Теги товара"
+
+#: integrations/integration-woocommerce.php:94
+msgid "All product categories"
+msgstr "Все категории товаров"
+
+#: integrations/integration-woocommerce.php:93
+msgid "Product Categories"
+msgstr "Категории товаров"
+
+#: integrations/integration-woocommerce.php:89
+msgid "The WooCommerce \"Shop\" landing page"
+msgstr "Целевая страница WooCommerce \"Магазин\""
+
+#: integrations/integration-woocommerce.php:88
+msgid "Shop Page"
+msgstr "Страница магазина"
+
+#. Author of the plugin
+#: integrations/integration-woocommerce.php:73
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: classes/class-woo-sidebars.php:699
+msgid "You have taken too long. Please go back and retry."
+msgstr "Вы потратили слишком много времени. Вернитесь и повторите попытку."
+
+#: classes/class-woo-sidebars.php:698
+msgid "You do not have sufficient permissions to access this page."
+msgstr "У вас нет достаточных прав для доступа к этой странице."
+
+#: classes/class-woo-sidebars.php:652
+msgid "Custom Sidebars"
+msgstr "Настраиваемые области виджетов"
+
+#: classes/class-woo-sidebars.php:408
+msgid "Widget Area updated."
+msgstr "Область для виджетов обновлена."
+
+#: classes/class-woo-sidebars.php:391
+msgid "Enter widget area name here"
+msgstr "Введите здесь название области виджета"
+
+#: classes/class-woo-sidebars.php:378
+msgid "Add an optional description, to be displayed when adding widgets to this widget area on the %sWidgets%s screen."
+msgstr "Добавляет необязательное описание, которое будет отображаться при добавлении виджетов в эту область виджетов на экране %sВиджеты%s."
+
+#: classes/class-woo-sidebars.php:322
+msgid "No sidebars are available with this theme."
+msgstr "В этой теме нет области виджетов."
+
+#: classes/class-woo-sidebars.php:295 classes/class-woo-sidebars.php:377
+msgid "Description"
+msgstr "Описание"
+
+#: classes/class-woo-sidebars.php:258
+msgid "Condition(s)"
+msgstr "Условие (я)"
+
+#: classes/class-woo-sidebars.php:258 classes/class-woo-sidebars.php:288
+msgid "Sidebar To Replace"
+msgstr "Область виджетов для замены"
+
+#: classes/class-woo-sidebars.php:223
+msgid "(Not in use by current theme)"
+msgstr "(Не используется в текущей теме)"
+
+#: classes/class-woo-sidebars.php:172
+msgid "No %s Found In Trash"
+msgstr "В корзине не найдено %s"
+
+#: classes/class-woo-sidebars.php:171
+msgid "No %s Found"
+msgstr "Не найдено %s"
+
+#: classes/class-woo-sidebars.php:170
+msgid "Search %s"
+msgstr "Поиск %s"
+
+#: classes/class-woo-sidebars.php:169
+msgid "View %s"
+msgstr "Посмотреть %s"
+
+#: classes/class-woo-sidebars.php:167
+msgid "New %s"
+msgstr "Новый %s"
+
+#: classes/class-woo-sidebars.php:166
+msgid "Edit %s"
+msgstr "Редактировать %s"
+
+#: classes/class-woo-sidebars.php:165
+msgid "Add New %s"
+msgstr "Добавить новый %s"
+
+#: classes/class-woo-sidebars.php:164
+msgctxt "Widget Area"
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: classes/class-woo-sidebars.php:163
+msgctxt "post type singular name"
+msgid "Widget Area"
+msgstr "Область для виджета"
+
+#: classes/class-woo-sidebars.php:162
+msgctxt "post type general name"
+msgid "Widget Areas"
+msgstr "Области виджетов"
+
+#: classes/class-woo-sidebars.php:155 classes/class-woo-sidebars.php:168
+msgid "Widget Areas"
+msgstr "Области виджетов"
+
+#: classes/class-woo-sidebars.php:154
+msgid "Widget Area"
+msgstr "Область для виджетов"
+
+#: classes/class-woo-conditions.php:700
+msgid "Taxonomy Token"
+msgstr "Токен таксономии"
+
+#: classes/class-woo-conditions.php:634
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: classes/class-woo-conditions.php:625
+msgid "Taxonomy Terms"
+msgstr "Термины таксономии"
+
+#: classes/class-woo-conditions.php:351
+msgid "Displayed on all 404 error screens."
+msgstr "Отображается на всех экранах 404 ошибки."
+
+#: classes/class-woo-conditions.php:350
+msgid "404 Error Screens"
+msgstr "404 Экраны ошибок"
+
+#: classes/class-woo-conditions.php:346
+msgid "Displayed on all date archives."
+msgstr "Отображается во всех архивах дат."
+
+#: classes/class-woo-conditions.php:345
+msgid "Date Archives"
+msgstr "Архивы по датам"
+
+#: classes/class-woo-conditions.php:341
+msgid "Displayed on all author archive screens (that don't have a more specific sidebar)."
+msgstr "Отображается на всех экранах архива авторов (у которых нет более конкретной области виджетов)."
+
+#: classes/class-woo-conditions.php:340
+msgid "Author Archives"
+msgstr "Архив автора"
+
+#: classes/class-woo-conditions.php:336
+msgid "Displayed on all archives (category, tag, taxonomy, post type, dated, author and search)."
+msgstr "Отображается во всех архивах (категория, тег, таксономия, тип записи, даты, автор и поиск)."
+
+#: classes/class-woo-conditions.php:335
+msgid "All Archives"
+msgstr "Все архивы"
+
+#: classes/class-woo-conditions.php:331
+msgid "Displayed on single entries of any public post type other than \"Pages\"."
+msgstr "Отображается в одиночных записях любого общедоступного типа записи, кроме \"Страницы\"."
+
+#: classes/class-woo-conditions.php:330
+msgid "Single Entries"
+msgstr "Одиночные записи"
+
+#: classes/class-woo-conditions.php:326
+msgid "Displayed on any front page, regardless of the settings under the \"Settings -> Reading\" admin screen."
+msgstr "Отображается на главной странице, независимо от настроек в \"Настройки -> Чтение\"."
+
+#: classes/class-woo-conditions.php:325
+msgid "Front Page"
+msgstr "Главная страница"
+
+#: classes/class-woo-conditions.php:321
+msgid "Displayed on the default \"Your Latest Posts\" screen."
+msgstr "Отображается на экране \"Ваши последние записи\" по умолчанию."
+
+#: classes/class-woo-conditions.php:320
+msgid "Default \"Your Latest Posts\" Screen"
+msgstr "Экран по умолчанию \"Ваши последние записи\""
+
+#: classes/class-woo-conditions.php:316
+msgid "Displayed on search results screens."
+msgstr "Отображается на экранах результатов поиска."
+
+#: classes/class-woo-conditions.php:315
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+#: classes/class-woo-conditions.php:311
+msgid "Displayed on all pages that don't have a more specific widget area."
+msgstr "Отображается на всех страницах, для которых не предусмотрена более конкретная область для виджетов."
+
+#: classes/class-woo-conditions.php:306
+msgid "Template Hierarchy"
+msgstr "Иерархия шаблонов"
+
+#: classes/class-woo-conditions.php:297
+msgid "All posts tagged %s"
+msgstr "Все записи с меткой %s"
+
+#: classes/class-woo-conditions.php:297
+msgid "All posts tagged \"%s\""
+msgstr "Все записи с меткой \"%s\""
+
+#: classes/class-woo-conditions.php:294
+msgid "All posts in the %s %s archive"
+msgstr "Показать все записи в архиве %s %s"
+
+#: classes/class-woo-conditions.php:294
+msgid "All posts in \"%s\""
+msgstr "Все записи в \"%s\""
+
+#: classes/class-woo-conditions.php:292
+msgid "The %s %s archive"
+msgstr "Архив %s %s"
+
+#: classes/class-woo-conditions.php:283
+msgid "The default \"%s\" archives"
+msgstr "Архивы по умолчанию \"%s\""
+
+#: classes/class-woo-conditions.php:275
+msgid "Taxonomy Archives"
+msgstr "Архивы таксономии"
+
+#: classes/class-woo-conditions.php:258
+msgid "Entries in the \"%s\" post type"
+msgstr "Записи в типе записи \"%s\""
+
+#: classes/class-woo-conditions.php:257
+msgid "Each Individual %s"
+msgstr "Каждый отдельный %s"
+
+#: classes/class-woo-conditions.php:249
+msgid "The \"%s\" post type archive"
+msgstr "Архив типа записей %s"
+
+#: classes/class-woo-conditions.php:248
+msgid "\"%s\" Post Type Archive"
+msgstr "\"%s\" Архив типа записей"
+
+#: classes/class-woo-conditions.php:241
+msgid "Post Types"
+msgstr "Типы записей"
+
+#: classes/class-woo-conditions.php:231
+msgid "The \"%s\" page template"
+msgstr "Шаблон страницы \"%s\""
+
+#: classes/class-woo-conditions.php:225
+msgid "Page Templates"
+msgstr "Шаблоны страниц"
+
+#: classes/class-woo-conditions.php:213
+msgid "A custom sidebar for \"%s\""
+msgstr "Пользовательская область виджетов для \"%s\""
+
+#: classes/class-woo-conditions.php:142
+msgid "The \"%s\" page"
+msgstr "Страница \"%s\""
+
+#: classes/class-woo-conditions.php:128 classes/class-woo-conditions.php:310
+msgid "Pages"
+msgstr "Страницы"
+
+#: classes/class-woo-conditions.php:57
+msgid "Conditions"
+msgstr "Условия"
